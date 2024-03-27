@@ -11,12 +11,13 @@
 **Objective:** The point of this exercise is to make sure you understand the mechanism for passing objects as parameters, and what that looks like in memory.
 
 1. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture an image of a diagram showing the local variables and parameters of main and riddle just before riddle returns for the code below.
-    * Save the image taken above to your project as Part1_2.jpg.
+    * Save the image taken above to your project as Part1_2.jpg.!
+    * [Part1_2.png](Part1_2.png)
 2. Answer the following question in the **text** block below:
     * Is the **blank** object mutable or immutable? How can you tell?
 
 ```text
-PUT ANSWER TO #2 HERE
+PUT ANSWER TO #2 HERE: The blank object is immutable due to it being unchanged once it has been created.
 ```
 
 ```java
@@ -41,13 +42,15 @@ public class Puzzler {
 
 3. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture a stack diagram showing the state of the below program just before **findCenter** returns.
     * Save the image taken above to your project as Part1_3.jpg.
+    * ![Part1_3.png](Part1_3.png)
 4. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture a stack diagram showing the state of the program just before **distance** returns.
     * Save the image taken above to your project as Part1_4.jpg.
+    * ![Part1_4.png](Part1_4.png)
 5. Answer the following question below in the **text** block below:
     * Explain how the return values from #3 and #4 differ.
 
 ```text
-PUT ANSWER TO #5 HERE
+PUT ANSWER TO #5 HERE: The return values for #3 and #4 differ due to findCenter finding the p1.x and p1.y and the distance taking the point(5,8) and subtracting (p1.x,p1.y) from it.
 ```
 
 ```java
@@ -83,18 +86,21 @@ Recall that aliases are two variables that refer to the same object.
 
 1. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture a diagram that shows the state of the program just before the end of main.
     * Save the image taken above to your project as Part2_1.jpg.
+    * ![Part2_1.png](Part2_1.png)
 2. What is the output of the program?
     * Put the output in the text block below
 
 ```text
-PUT ANSWER TO #2 HERE
+PUT ANSWER TO #2 HERE:
+(5,8)
+(5,8)
 ```
 
 3. At the end of main, are p1 and p2 aliased? Why or why not?
     * Put your answer in the text block below
 
 ```text
-PUT ANSWER TO #3 HERE
+PUT ANSWER TO #3 HERE: At the end of main, p1 and p2 are not aliased due to p1 and p2 being assigned to different center coordinates, they don't call back to the same memory location.
 ```
 
 ```java
@@ -140,8 +146,10 @@ for (int i = 0; i < s.length(); i++) {
 1. Encapsulate the above fragment in a method in the [StringPlayground](src/StringPlayground.java) class that takes a string argument and returns the final value of count.
 2. Test your method with multiple strings, including some that are balanced and some that are not.
     * Screenshot your output and add it to your project as Part3_2.jpg
+    * With string of ((7*3)(4-2) * 2)![Part3_2.png](Part3_2.png)
 3. Generalize the code so that it works on any string.
     * What could you do to generalize it more?
+    * Include a method that takes a string that counts the balance of the parentheses.
 
 ## Part 4: Large Numbers
 
